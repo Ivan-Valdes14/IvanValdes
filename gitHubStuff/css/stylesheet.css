@@ -1,0 +1,582 @@
+@import url("http://139.62.210.181/default.css");
+/*This is all for index.html*/
+
+#personalHeader1 {
+    color: cyan;
+}
+
+#personalHeader2 {
+    color: deeppink;
+}
+
+#personalHeader3 {
+    color: royalblue;
+}
+
+a.index:hover {
+    font-size: 150%;
+}
+
+#highschool {
+    font-style: italic;
+}
+
+#college {
+    font-weight: bold;
+}
+
+
+/*end of index.html css*/
+
+
+/*This is all for schedule.html*/
+
+.schedule {
+    background-color: indianred;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+}
+
+.tableData {
+    text-align: center;
+}
+
+.stripe {
+    background-color: grey;
+}
+
+.innerList {
+    list-style-type: upper-alpha;
+}
+
+#outerList {
+    list-style-type: decimal;
+}
+
+
+/*end of schedule.html css*/
+
+
+/*This is all for account.html*/
+
+p.account {
+    margin: 10px;
+}
+
+.left {
+    float: left;
+    width: 8%;
+    border: 1px solid;
+    margin: 5px;
+}
+
+.right {
+    width: 8%;
+    float: left;
+    border: 1px solid;
+    margin: 5px;
+}
+
+#buttons {
+    clear: both;
+}
+
+.row {
+    
+    clear: both;
+    margin: 5px;
+}
+
+.main {
+    
+    margin: 5px;
+}
+
+
+/* The container */
+
+.container {
+    float: left;
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+    background-color: blue;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+    background-color: blue;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 2px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* The container */
+
+.container2 {
+    display: block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* Create a custom radio button */
+
+.marking {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container2:hover input~.marking {
+    background-color: #ccc;
+}
+
+
+/* When the radio button is checked, add a blue background */
+
+.container2 input:checked~.marking {
+    background-color: green;
+}
+
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.marking:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the indicator (dot/circle) when checked */
+
+.container2 input:checked~.marking:after {
+    display: block;
+}
+
+
+/* Style the indicator (dot/circle) */
+
+.container2 .marking:after {
+    top: 3.4px;
+    left: 3.5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 40%;
+    background: white;
+}
+
+
+/***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ *****************************************************************************End Of Project 1******************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************/
+
+#proj2-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 42px;
+    grid-template-areas: "head head head head head" ". . pickup . ." ". . dropoff . ." ". . cartype . ." ". . info . ." ". . buttons . ." "foot foot foot foot foot";
+    background: linear-gradient(45deg, #c4c4c4, #093d13);
+}
+
+#proj2body {
+    min-width: 895px;
+    background-color: #232323;
+}
+
+#header {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background-color: #020d04;
+    gap: 5px;
+    width: auto;
+    grid-area: head;
+}
+
+#header>h2 {
+    color: #94f4c6;
+}
+
+#footer {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background-color: #020d04;
+    gap: 5px;
+    width: auto;
+    height: 50px;
+    grid-area: foot;
+}
+
+#pickupDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    justify-content: left-space-evenly;
+    grid-area: pickup;
+    border: 1px solid black;
+    background-color: #636355;
+    min-width: 700px;
+    box-shadow: 5px 5px;
+}
+
+#pickupTime {
+    display: grid;
+    grid-template-columns: 25% auto;
+    gap: 5px;
+    justify-content: left-space-evenly;
+    margin: 1px;
+    color: #94f4c6;
+    margin: 5px;
+}
+
+#pickupState {
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 5px;
+    justify-content: left-space-evenly;
+    margin: 1px;
+    color: #94f4c6;
+    margin: 5px;
+}
+
+#dropoffDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+    border: 1px solid black;
+    justify-content: left-space-evenly;
+    grid-area: dropoff;
+    background-color: #636355;
+    box-shadow: 5px 5px;
+}
+
+#dropOffTime {
+    display: grid;
+    grid-template-columns: 25% auto;
+    gap: 5px;
+    justify-content: left-space-evenly;
+    color: #94f4c6;
+    margin: 5px;
+}
+
+#dropOffState {
+    display: grid;
+    grid-template-columns: 20% auto;
+    gap: 5px;
+    justify-content: left-space-evenly;
+    color: #94f4c6;
+    margin: 5px;
+}
+
+#carType {
+    display: grid;
+    grid-template-columns: 8% auto;
+    gap: 5px;
+    grid-area: cartype;
+    border: 1px solid black;
+    background-color: #636355;
+    box-shadow: 5px 5px;
+}
+
+#carTypeList {
+    margin: 5px;
+}
+
+#economyCar {
+    cursor: pointer;
+}
+
+#compactCar {
+    cursor: pointer;
+}
+
+#standardCar {
+    cursor: pointer;
+}
+
+#fullSizeCar {
+    cursor: pointer;
+}
+
+.carLabel {
+    color: #94f4c6;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#textFields {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    grid-area: info;
+    border: 1px solid black;
+    background-color: #636355;
+    box-shadow: 5px 5px;
+}
+
+#textFields>div {
+    display: grid;
+    grid-template-columns: 10% auto;
+    gap: 5px;
+    color: #94f4c6;
+    justify-content: left-space-evenly;
+    margin: 7.5px;
+}
+
+#buttonDiv {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15%;
+    justify-content: center;
+    grid-area: buttons;
+    box-shadow: 5px 5px;
+    border: 1px solid black;
+    background-color: #ffffff;
+}
+
+#sbm {
+    height: 250px;
+    width: 250px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+#reset {
+    height: 250px;
+    width: 250px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+#dropoffLoc,
+#pickupLoc,
+#fname,
+#lname,
+#ead,
+#cname,
+#cnum,
+#secnum,
+#pickup-time,
+#dropoff-time,
+#proj2 {
+    box-sizing: border-box;
+    width: 250px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ *****************************************************************************End Of Project 2******************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************
+ ***************************************************************************************************************************************************************************/
+
+#text-area {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    grid-area: info;
+    border: 1px solid black;
+    background-color: #636355;
+    box-shadow: 5px 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#headerp3 {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    background-color: #636355;
+    box-shadow: 5px 5px;
+    gap: 5px;
+    width: auto;
+    grid-area: head;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#headerp3>h1 {
+    color: salmon;
+}
+
+#user-text {
+    box-sizing: border-box;
+    width: auto;
+    height: 200px;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: left;
+    vertical-align: top;
+    grid-area: 1 / 1 / 2 / 4
+}
+
+#textFieldsp3 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 20px;
+    grid-area: info;
+    border: 1px solid black;
+    background-color: #636355;
+    box-shadow: 5px 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#textFieldsp3>div {
+    display: grid;
+    grid-template-columns: 10% auto;
+    gap: 5px;
+    color: salmon;
+    justify-content: left-space-evenly;
+    margin: 7.5px;
+}
+
+#buttonDivp3 {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15%;
+    justify-content: center;
+    grid-area: buttons;
+    box-shadow: 5px 5px;
+    border: 1px solid black;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: 2 / 2 / 3 / 3
+}
+
+#footerp3 {
+    width: auto;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 5px;
+    width: auto;
+    height: 50px;
+    grid-area: foot;
+}

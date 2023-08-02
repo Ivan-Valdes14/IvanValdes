@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Valdes Car Rental</title>
+		<link rel="stylesheet" type="text/css" href="../css/stylesheet.css">
+		<script src="script.js"></script>
+	</head>
+	<body id="proj2body">
+		<form onSubmit="return validateForm();">
+			<div id="proj2-grid">
+				<div id="header">
+					<h2>Car Rental Form</h2>
+				</div>
+	
+	
+				<div  id="pickupDiv">
+					<div id="pickupTime">
+						<label for="pickup-time">Pickup Time:</label>
+						<input type="datetime-local" id="pickup-time" name="pickup-time" value="2022-03-01T00:00" min="	2022-03-01T00:00" max="2025-12-31T00:00">
+					</div>
+	
+					<div id="pickupState">
+						<label for="pickupLoc">Pickup State:</label>
+						<select id="pickupLoc">
+						<option value="" disabled selected>Select State</option>
+						<option value="AL">AL</option>
+						<option value="AK">AK</option>
+						<option value="AR">AR</option>
+						<option value="AZ">AZ</option>
+						<option value="CA">CA</option>
+						<option value="CO">CO</option>
+						<option value="CT">CT</option>
+						<option value="DC">DC</option>
+						<option value="DE">DE</option>
+						<option value="FL">FL</option>
+						<option value="GA">GA</option>
+						<option value="HI">HI</option>
+						<option value="IA">IA</option>
+						<option value="ID">ID</option>
+						<option value="IL">IL</option>
+						<option value="IN">IN</option>
+						<option value="KS">KS</option>
+						<option value="KY">KY</option>
+						<option value="LA">LA</option>
+						<option value="MA">MA</option>
+						<option value="MD">MD</option>
+						<option value="ME">ME</option>
+						<option value="MI">MI</option>
+						<option value="MN">MN</option>
+						<option value="MO">MO</option>
+						<option value="MS">MS</option>
+						<option value="MT">MT</option>
+						<option value="NC">NC</option>
+						<option value="NE">NE</option>
+						<option value="NH">NH</option>
+						<option value="NJ">NJ</option>
+						<option value="NM">NM</option>
+						<option value="NV">NV</option>
+						<option value="NY">NY</option>
+						<option value="ND">ND</option>
+						<option value="OH">OH</option>
+						<option value="OK">OK</option>
+						<option value="OR">OR</option>
+						<option value="PA">PA</option>
+						<option value="RI">RI</option>
+						<option value="SC">SC</option>
+						<option value="SD">SD</option>
+						<option value="TN">TN</option>
+						<option value="TX">TX</option>
+						<option value="UT">UT</option>
+						<option value="VT">VT</option>
+						<option value="VA">VA</option>
+						<option value="WA">WA</option>
+						<option value="WI">WI</option>
+						<option value="WV">WV</option>
+						<option value="WY">WY</option>
+						</select>
+					</div>
+				</div>
+	
+				
+	
+				<div id="dropoffDiv">
+					<div id="dropOffTime">
+						<label for="dropoff-time">Drop Off Time:</label>
+						<input type="datetime-local" id="dropoff-time" name="dropoff-time" value="2022-03-01T00:00" min="	2022-03-01T00:00" max="2025-12-31T00:00">
+					</div>
+	
+					<div id="dropOffState">
+						<label for="dropoffLoc">Drop Off State:</label>
+						<select id="dropoffLoc">
+						<option value="" disabled selected>Select State</option>
+						<option value="AL">AL</option>
+						<option value="AK">AK</option>
+						<option value="AR">AR</option>
+						<option value="AZ">AZ</option>
+						<option value="CA">CA</option>
+						<option value="CO">CO</option>
+						<option value="CT">CT</option>
+						<option value="DC">DC</option>
+						<option value="DE">DE</option>
+						<option value="FL">FL</option>
+						<option value="GA">GA</option>
+						<option value="HI">HI</option>
+						<option value="IA">IA</option>
+						<option value="ID">ID</option>
+						<option value="IL">IL</option>
+						<option value="IN">IN</option>
+						<option value="KS">KS</option>
+						<option value="KY">KY</option>
+						<option value="LA">LA</option>
+						<option value="MA">MA</option>
+						<option value="MD">MD</option>
+						<option value="ME">ME</option>
+						<option value="MI">MI</option>
+						<option value="MN">MN</option>
+						<option value="MO">MO</option>
+						<option value="MS">MS</option>
+						<option value="MT">MT</option>
+						<option value="NC">NC</option>
+						<option value="NE">NE</option>
+						<option value="NH">NH</option>
+						<option value="NJ">NJ</option>
+						<option value="NM">NM</option>
+						<option value="NV">NV</option>
+						<option value="NY">NY</option>
+						<option value="ND">ND</option>
+						<option value="OH">OH</option>
+						<option value="OK">OK</option>
+						<option value="OR">OR</option>
+						<option value="PA">PA</option>
+						<option value="RI">RI</option>
+						<option value="SC">SC</option>
+						<option value="SD">SD</option>
+						<option value="TN">TN</option>
+						<option value="TX">TX</option>
+						<option value="UT">UT</option>
+						<option value="VT">VT</option>
+						<option value="VA">VA</option>
+						<option value="WA">WA</option>
+						<option value="WI">WI</option>
+						<option value="WV">WV</option>
+						<option value="WY">WY</option>
+						</select>
+					</div>
+				</div>
+	
+				
+	
+				<div id="carType">		
+					<label for="carTypeList" class="carLabel">Car Type:</label>
+					<div id="carTypeList">
+						<div>
+							<input value="economyCar" id="economyCar" type="radio" name="carTypeBtn">
+							<label for="economyCar" class="carLabel">Economy Car</label>
+						</div>
+	
+						<div>
+							<input value="compactCar" id="compactCar" type="radio" name="carTypeBtn">
+							<label for="compactCar" class="carLabel">Compact Car</label>
+						</div>
+	
+						<div>
+							<input value="standardCar" id="standardCar" type="radio" name="carTypeBtn">
+							<label for="standardCar" class="carLabel">Standard Car</label>
+						</div>
+	
+						<div>
+							<input value="fullSizeCar" id="fullSizeCar" type="radio" name="carTypeBtn">
+							<label for="fullSizeCar" class="carLabel">Full Size Car</label>
+						</div>
+					</div>
+				</div>
+	
+	
+				
+	
+				<div id="textFields">
+					<div>
+						<label for="fname">First Name:</label>
+						<input id="fname" type="text" placeholder="Your first name goes here..." name="First-Name" >
+					</div>
+	
+					<div>
+						<label for="lname">Last Name:</label>
+						<input id="lname" type="text" placeholder="Your last name goes here..." name="Last-Name" >
+					</div>
+	
+					<div>
+						<label for="ead">Email Address:</label>
+						<input id="ead" type="text" placeholder="example@domain.com" name="Email-Address" >
+					</div>
+	
+					<div>
+						<label for="cname">Name on Card:</label>
+						<input id="cname" type="text" placeholder="Enter full name here..." name="Name-on-card" >
+					</div>
+	
+					<div>
+						<label for="cnum">Card Number:</label>
+						<input id="cnum" type="text" placeholder="xxxx xxxx xxxx xxxx (No Hyphens)" name="Card-Number" >
+					</div>
+	
+					<div>
+						<label for="secnum"><a href="https://en.wikipedia.org/wiki/Card_security_code" target="_blank">CVV2 / 	CVC:</a></label>
+						<input id="secnum" type="text" placeholder="xxx" name="CVC"  >
+					</div>
+	
+					<div>
+						<label for="proj2">Select a date:</label>
+						<input type="date" name="proj2" id="proj2" min="2022-03-01" max="2025-12-31" value="2022-03-01">
+					</div>
+				</div>
+	
+	
+	
+				<div id="buttonDiv">
+					<button type="submit" id="sbm" value="Submit">
+	  					<img src="images/confirm2.jpeg" alt="Submit"><br>
+					</button>
+	
+					<button type="reset" id="reset" value="Reset">
+	  					<img src="images/Unknown.png" alt="reset"><br>
+					</button>
+				</div>
+	
+	
+	
+				<div id="footer">
+					<footer>
+						<a href="../index.html">ePortfolio</a>
+					</footer>
+				</div>
+			</div>	
+		</form>
+	</body>
+</html>

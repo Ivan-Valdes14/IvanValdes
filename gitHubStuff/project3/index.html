@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/stylesheet.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src='script.js'></script>
+</head>
+
+<body>
+    <form onSubmit="return analyzeText();">
+        <div id="p3-container">
+
+            <div id="headerp3">
+                <h1>Text Analyzer</h1>
+            </div>
+
+            <div id="text-area">
+                <textarea id="user-text" placeholder="Enter your sentences here"></textarea>
+
+                <div id="buttonDivp3">
+                    <button type="submit" id="sbm" value="Submit">
+                      <img src="images/confirm2.jpeg" alt="Submit"><br>
+                </button>
+                </div>
+            </div>
+            <div id="headerp3">
+                <h1>Your Results</h1>
+            </div>
+            <div id="textFieldsp3">
+
+                <div>
+                    <label for="wordCount">Word Count:</label>
+                    <span id="wordCount"></span> </div>
+
+                <div>
+                    <label for="uwc">Unique Word Count:</label>
+                    <span id="uwc"></span> </div>
+
+                <div>
+                    <label for="lwc">Long Word Count:</label>
+                    <span id="lwc"></span> </div>
+
+                <div>
+                    <label for="sc">Sentences Count:</label>
+                    <span id="sc"></span> </div>
+
+                <div>
+                    <label for="nc">Number Count:</label>
+                    <span id="nc"></span> </div>
+
+                 <div>
+                    <label for="mfw">Most Frequent Word:</label>
+                    <span id="mfw"></span> </div>
+
+            </div>
+
+            <div id="footerp3">
+                <footer>
+                    <a href="../index.html">ePortfolio</a>
+                </footer>
+            </div>
+
+        </div>
+    </form>
+</body>
+
+</html>
