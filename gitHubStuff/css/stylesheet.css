@@ -76,6 +76,7 @@ p._bubble-left::before {
 div._bubble-div {
     display: none;
 }
+
 /*This is all for index.html*/
 
 #personalHeader1 {
@@ -337,7 +338,80 @@ p.account {
     border-radius: 40%;
     background: white;
 }
+@media only screen and (max-width: 480px) {
+    /*This is all for index.html*/
+    a.index:hover {
+        font-size: 200%;
+    }
 
+    /*end of index.html css*/
+
+    /*This is all for schedule.html*/
+
+    .schedule {
+        font-size: 110%;
+    }
+
+    table, th, td {
+        font-size: 100%;
+    }
+
+    /*end of schedule.html css*/
+
+    /*This is all for account.html*/
+
+    p.account {
+        margin: 20px;
+        font-size: 110%;
+    }
+
+    .left, .right {
+        width: 40%;
+        margin: 10px;
+    }
+
+    .row {
+        margin: 10px;
+    }
+
+    .main {
+        margin: 10px;
+    }
+
+    /* The container */
+
+    .container, .container2 {
+        font-size: 120%;
+    }
+
+    /* Create a custom checkbox */
+
+    .checkmark, .marking {
+        height: 25px;
+        width: 25px;
+    }
+
+    /* Style the checkmark/indicator */
+
+    .container .checkmark:after {
+        left: 7px;
+        top: 4px;
+        width: 3px;
+        height: 10px;
+        border-width: 0 4px 4px 0;
+    }
+
+    /* Style the indicator (dot/circle) */
+
+    .container2 .marking:after {
+        top: 5.4px;
+        left: 5.5px;
+        width: 12px;
+        height: 12px;
+    }
+
+    /*end of account.html css*/
+}
 
 /***************************************************************************************************************************************************************************
  ***************************************************************************************************************************************************************************
@@ -554,6 +628,66 @@ p.account {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+    #proj2-grid {
+        grid-template-columns: auto;
+        gap: 10px;
+        grid-template-areas: 
+        "head" 
+        "pickup" 
+        "dropoff" 
+        "cartype" 
+        "info" 
+        "buttons" 
+        "foot";
+    }
+
+    #proj2body {
+        min-width: auto;
+    }
+
+    #pickupDiv, #dropoffDiv, #carType, #textFields, #buttonDiv {
+        min-width: auto;
+    }
+
+    #pickupTime, #pickupState, #dropOffTime, #dropOffState {
+        grid-template-columns: auto;
+        font-size: 110%;
+    }
+
+    #textFields>div {
+        grid-template-columns: auto;
+        font-size: 110%;
+        margin: 10px;
+    }
+
+    #carTypeList, .carLabel {
+        font-size: 110%;
+    }
+
+    #buttonDiv {
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+
+    #sbm, #reset {
+        height: 100px;
+        width: 100px;
+    }
+
+    #dropoffLoc, #pickupLoc, #fname, #lname, #ead, #cname, #cnum, #secnum, #pickup-time, #dropoff-time, #proj2 {
+        width: 80%;
+        font-size: 110%;
+    }
+    #buttonDiv button img {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
 
 /***************************************************************************************************************************************************************************
  ***************************************************************************************************************************************************************************
@@ -656,4 +790,39 @@ p.account {
     width: auto;
     height: 50px;
     grid-area: foot;
+}
+
+@media only screen and (max-width: 600px) {
+    #text-area,
+    #headerp3,
+    #textFieldsp3 {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #user-text {
+        width: 100%;
+        height: 150px;
+        font-size: 120%;
+    }
+
+    #textFieldsp3>div {
+        grid-template-columns: auto;
+        margin: 5px;
+    }
+
+    #buttonDivp3 {
+        grid-template-columns: auto;
+        gap: 5%;
+    }
+
+    #footerp3 {
+        height: 30px;
+    }
+    #buttonDivp3 button img {
+        width: 70%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
 }
