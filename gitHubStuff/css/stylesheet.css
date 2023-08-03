@@ -1,82 +1,43 @@
-div._main_header {
+body {
+    font-family: Arial, sans-serif; /* Use a custom font */
+    color: #333; /* Use a modern, less stark color scheme */
+    line-height: 1.5;
+}
+
+.header {
     height: 100px;
-    line-height: 100px;
     text-align: center;
-    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-span._main_header {
+.header__title {
     color: #ffffff;
-    font-size: 250%;
+    font-size: 2em;
 }
 
-span._body_text {
-    font-size: 150%;
+section {
+    margin-bottom: 2em;
 }
 
-p._bubble {
-    position: relative;
-    background-color: #33F1FF;
-    padding: 1.125em 1.5em;
-    font-size: 1.25em;
-    border-radius: 1rem;
-    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+section h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
 }
 
-p._bubble-top {
-    max-width: 25em;
-    margin: 0 auto;
-    position: relative;
-    background-color: #33F1FF;
-    padding: 1.125em 1.5em;
-    font-size: 1.25em;
-    border-radius: 1rem;
-    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+.project {
+    margin-bottom: 1em;
 }
 
-p._bubble-left {
-    max-width: 20em;
-    position: relative;
-    background-color: #33F1FF;
-    padding: 1.125em 1.5em;
-    font-size: 1.25em;
-    border-radius: 1rem;
-    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+.project h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
 }
 
-p._bubble-top::before {
-    bottom: 100%;
-    left: 1.5em;
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: .75rem solid transparent;
-    border-top: none;
-
-    border-bottom-color: #33F1FF;
-    filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+.project p {
+    margin-bottom: 0.5em;
 }
-
-p._bubble-left::before {
-    bottom: 45%;
-    transform: rotate(-90deg);
-    left: -0.87em;
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: .75rem solid transparent;
-    border-top: none;
-
-    border-bottom-color: #33F1FF;
-    filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
-}
-
-div._bubble-div {
-    display: none;
-}
-
 /*This is all for index.html*/
 
 #personalHeader1 {
