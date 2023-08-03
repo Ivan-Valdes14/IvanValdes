@@ -80,6 +80,7 @@ section h2 {
 .project a:hover {
     text-decoration: underline;
 }
+
 .profile-pic {
     width: 200px;
     height: auto;
@@ -108,6 +109,13 @@ section h2 {
     .project h3 {
         font-size: 1.4em;
     }
+    
+    .profile-pic {
+    width: 100px;
+    height: auto;
+    border-radius: 50%; /* Add this line */
+    object-fit: cover; /* To maintain aspect ratio */
+}
 }
 /*This is all for index.html*/
 
