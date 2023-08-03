@@ -5,43 +5,49 @@
 		<link rel="stylesheet" type="text/css" href="gitHubStuff/css/stylesheet.css">
 	</head>
 	<body>
-		<div class="_main_header" style="background-image: url('gitHubStuff/images/cop3813_header.jpg');">
+		<header class="header" style="background-image: url('gitHubStuff/images/cop3813_header.jpg');">
+			<h1 class="header__title">Ivan Valdes's Web Portfolio</h1>
+		</header>
 		
-		
-			<span class="_main_header">Ivan Valdes's Web Portfolio</span>
-		
-			
-		</div>
-		
-		
-		<div style="clear: left; ">
-			<p><span class="_body_text">Welcome to my WebPage Portfolio</span></p>
-			<p><span class="_body_text">You can view my projects by clicking the links below.</span></p>
-			<div style="float: left;">
-			<ul>
-				<span class="_body_text">
-				<!-- Use <a>..</a> tags to link the Project n text below to your projects as you complete them -->
-					<h5>This First project was only HTML and CSS it was done to get comfortable with styling rules </h5>
-					<li><a href="gitHubStuff/project1/index.html">Project 1</a></li>
-					<h5>This Second project is HTML, CSS, and JavaScript it use css grid layout amoung some other cool css rules and the JavaScript that was used was only for form validation</h5>
-					<li><a href="gitHubStuff/project2/index.html">Project 2</a></li>
-					<h5>This Third project is HTML, CSS, and JS this time the focus was mainly on JS creating multiple functions and then changing the DOM objects values for a specfic object associated with function </h5>
-					<li><a href="gitHubStuff/project3/index.html">Project 3</a></li>
-					<h5>The following item is a link to the git repo for my portion of the senior proejct so you can see how all my code was implemented throughout the project</h5>
-					<h5>Along with the code there is the database and usecase documentation to show how this was all developed over a year long process</h5>
-					<h5>This project was done for a non-profit client in a real world setting. Our client was Florida Mission of Mercy, an org who serves the less fortunate and provides free dental care</h5>
-					<h5>From the system design, to the database design, to my portion of the code, I myself did all of this for the Visitor Information forms.</h5>
-					<h5> My teammates did the login and landing page for volunteers which you will see in the software demo and they seperately developed the DB and system for that portion</h5>
-					<li><a href="https://github.com/Ivan-Valdes14/Fla-MOM-senior-project">Senior Project</a></li>
-					<h5>The following link is to a youtube video showing the software demo of our fully functioning project hosted on a live azure cloud server</h5>
-					<li><a href="https://youtu.be/3NWp0Gh3nnA?t=132" target="_blank">Senior Project Video Demo</a></li>
-					<h5>The following link is to my Senior Data Analytics Project. We conducted tests on if the suicide rate increased due to certain independent variables the results were quite surprising</h5>
-					<li><a href="gitHubStuff/DataAnalytics/Data_Analytics_Final.html" target="_blank">Data Analytics Senior Project</a></li>
-				</span>
-			</ul>
-			</div>
-			
-		</div>
-		
+		<main>
+			<section class="welcome">
+				<h2>Welcome to my WebPage Portfolio</h2>
+				<p>You can view my projects by clicking the links below.</p>
+			</section>
+
+			<section class="projects">
+				<h2>Projects</h2>
+				<div class="project">
+					<h3>Project 1</h3>
+					<p>This First project was only HTML and CSS. It was done to get comfortable with styling rules.</p>
+					<a href="gitHubStuff/project1/index.html">View Project</a>
+				</div>
+
+				<div class="project">
+					<h3>Project 2</h3>
+					<p>This Second project is HTML, CSS, and JavaScript. It uses css grid layout among some other cool css rules, and the JavaScript was used only for form validation.</p>
+					<a href="gitHubStuff/project2/index.html">View Project</a>
+				</div>
+
+				<div class="project">
+					<h3>Project 3</h3>
+					<p>This Third project is HTML, CSS, and JS. This time the focus was mainly on JS, creating multiple functions and then changing the DOM object's values for a specific object associated with the function.</p>
+					<a href="gitHubStuff/project3/index.html">View Project</a>
+				</div>
+
+				<div class="project">
+					<h3>Senior Project</h3>
+					<p>The following item is a link to the GitHub repo for my portion of the senior project so you can see how all my code was implemented throughout the project. The project was done for Florida Mission of Mercy, a non-profit organization that serves the less fortunate and provides free dental care.</p>
+					<a href="https://github.com/Ivan-Valdes14/Fla-MOM-senior-project">View Project on GitHub</a>
+					<a href="https://youtu.be/3NWp0Gh3nnA?t=132" target="_blank">Watch the Video Demo</a>
+				</div>
+
+				<div class="project">
+					<h3>Data Analytics Senior Project</h3>
+					<p>The following link is to my Senior Data Analytics Project. We conducted tests on whether the suicide rate increased due to certain independent variables; the results were quite surprising.</p>
+					<a href="gitHubStuff/DataAnalytics/Data_Analytics_Final.html" target="_blank">View Project</a>
+				</div>
+			</section>
+		</main>
 	</body>
 </html>
