@@ -80,6 +80,12 @@ section h2 {
 .project a:hover {
     text-decoration: underline;
 }
+.profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 50%; /* Add this line */
+    object-fit: cover; /* To maintain aspect ratio */
+}
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
