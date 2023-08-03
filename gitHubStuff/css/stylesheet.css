@@ -1,7 +1,10 @@
 body {
-    font-family: Arial, sans-serif; /* Use a custom font */
-    color: #333; /* Use a modern, less stark color scheme */
+    font-family: Arial, sans-serif;
+    color: #333;
     line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .header {
@@ -10,11 +13,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 .header__title {
     color: #ffffff;
     font-size: 2em;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
 }
 
 main {
@@ -56,6 +79,29 @@ section h2 {
 
 .project a:hover {
     text-decoration: underline;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+    }
+
+    .header__title {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    section h2 {
+        font-size: 1.5em;
+    }
+
+    .project h3 {
+        font-size: 1.4em;
+    }
 }
 /*This is all for index.html*/
 
