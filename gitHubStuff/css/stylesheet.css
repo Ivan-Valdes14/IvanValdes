@@ -17,6 +17,10 @@ body {
     font-size: 2em;
 }
 
+main {
+    padding: 1em;
+}
+
 section {
     margin-bottom: 2em;
 }
@@ -28,6 +32,10 @@ section h2 {
 
 .project {
     margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
 
 .project h3 {
@@ -37,6 +45,17 @@ section h2 {
 
 .project p {
     margin-bottom: 0.5em;
+}
+
+.project a {
+    display: inline-block;
+    margin-right: 1em;
+    color: #008CBA;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
 }
 /*This is all for index.html*/
 
