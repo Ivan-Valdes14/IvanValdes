@@ -27,6 +27,9 @@ nav {
     background-color: #00529B; /* blue nav */
     color: #fff;
     padding: 1em 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; // Ensures the navigation stays on top of other content
 }
 
 nav ul {
