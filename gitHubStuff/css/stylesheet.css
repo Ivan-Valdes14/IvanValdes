@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(135deg, ##C9C7BA 0%, #949698 100%); /* Added gradient */
+    background: linear-gradient(135deg, #C9C7BA 0%, #949698 100%); /* Added gradient */
     
 }
 
